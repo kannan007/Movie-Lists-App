@@ -12,3 +12,6 @@
   * A text box is provided for an User to search for a particular movie.
   * An User can also filter the movies based on the "Genre"
   * By Clicking on a particular movie(image) it will redirect to another page which will display more information about the particular movie. 
+  
+  
+  https://kannan007.github.io/Movie-Lists-App/#/
