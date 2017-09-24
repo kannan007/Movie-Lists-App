@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body ng-controller="MoviesController">
+	<div class="container movies-section">
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label>Type a Movie Name to search</label>
+				<input type="text" class="form-control" ng-model="moviename">
+			</div>
+			<div class="col-md-6 form-group">
+				<label>Select a genre</label>
+				<select ng-model="moviegenre" class="form-control">
+					<option ng-repeat="x in GenreLists">{{x}}</option>
+				</select>
+			</div>
+		</div>
+		<div class="row movie-lists">
+			<div class="col-sm-4 col-md-3 movies" ng-repeat="movie in Movies | filter:{name: moviename} | filter:{genres: moviegenre}">
+				<a ui-sref="home.product({id:movie.id})"><img src="{{movie.img}}"></a>
+				<p>{{movie.name}}</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

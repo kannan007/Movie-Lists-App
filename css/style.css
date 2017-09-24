@@ -1,0 +1,76 @@
+body {
+  background-color: #2B2B2B;
+  position: relative;
+  margin: 15px 0;
+}
+body .nav.nav-pills {
+  display: flex;
+  justify-content: center;
+}
+body .nav.nav-pills li a {
+  padding: 15px 20px;
+}
+body .movies-section .form-group {
+  margin: 15px 0;
+}
+body .movies-section .form-group label {
+  color: white;
+}
+body .movies-section .movie-lists {
+  margin: 15px 0;
+}
+body .movies-section .movie-lists .movies {
+  margin: 0 0 15px;
+}
+body .movies-section .movie-lists .movies a img {
+  display: block;
+  margin: auto;
+}
+body .movies-section .movie-lists .movies p {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  padding: 8px 0 0 0;
+  color: #f6f0f0;
+}
+body .single-movie-section {
+  margin: 15px 0;
+  color: #f6f0f0;
+}
+body .single-movie-section .movie-image img {
+  display: block;
+  margin: auto;
+}
+body .single-movie-section .movie-details h3 .sub-details {
+  margin: 0 0 0 10px;
+}
+body .single-movie-section .movie-details h3 .sub-details span {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+}
+body .single-movie-section .movie-details h3 .sub-details i.fa {
+  font-size: 20px;
+  padding-right: 7px;
+}
+body .single-movie-section .movie-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+body .single-movie-section .movie-details ul li {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: Capitalize;
+}
+body .single-movie-section .movie-details ul li:after {
+  content: "/";
+}
+body .single-movie-section .movie-details ul li:last-child:after {
+  content: "";
+}
+body .single-movie-section .movie-details p {
+  font-size: 16px;
+}

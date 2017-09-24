@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body ng-app="myApp" ng-controller="SingleMovieController">
+	<div class="container">
+		<div class="row single-movie-section">
+			<div class="col-md-3 movie-image">
+				<img src="{{Movie.img}}">
+			</div>
+		  	<div class="col-md-9 movie-details">
+		  		<h3>{{Movie.name}} <span class="sub-details"><span><i class="fa fa-star" aria-hidden="true"></i>{{Movie.rate}}/10</span>
+		  			<span><i class="fa fa-clock-o" aria-hidden="true"></i>{{Movie.length}}</span></span>
+		  		</h3>
+		  		<ul>Genres:
+		  			<li ng-repeat="x in Movie.genres">{{x}}</li>
+		  		</ul>
+				<h4>Storyline:</h4>
+				<p>{{Movie.description}}</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
